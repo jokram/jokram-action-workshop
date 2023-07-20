@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Greet
         run: echo "Hello World!"
-      - run: ls -al
-      - uses: actions/checkout@v3.5.3
-      - run: ls -al 
+      - name: List directory before checkout
+        run: ls -al
+      - name: Checkout repository
+        uses: actions/checkout@v3.5.3
+      - name: List directory after checkout
+        run: ls -al 
