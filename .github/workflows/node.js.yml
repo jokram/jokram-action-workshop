@@ -33,4 +33,5 @@ jobs:
       uses: davelosert/vitest-coverage-report-action@v2.1.0
       with:
         vite-config-path: vite.config.ts
+      if: always()
       
