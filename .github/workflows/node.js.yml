@@ -41,6 +41,9 @@ jobs:
 
     name: 🐳 Package & Publish
     runs-on: ubuntu-latest
+     outputs:
+      container: ${{ steps.meta.outputs.tags }}
+    
     permissions:
       contents: read
       packages: write
