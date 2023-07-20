@@ -90,7 +90,7 @@ jobs:
       contents: read
     environment:
       name: staging
-      url: "${{ steps.deploy.outputs.url }}"
+      url: "${{ steps.deploy.outputs.webAppUrl }}"
 
     steps:
       - uses: actions/checkout@v2
